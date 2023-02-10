@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile</title>
+  <link rel="stylesheet"href="style.css">
+  <script src="https://kit.fontawesome.com/1b3dc41d66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="Image/logo.png"class="logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p> Student,</p>
+        <h1> Hi,I'm <span>Ajit</span><br><span>Itani</span> From Nepal</h1>
+      </div>
+    </div>
+  </div>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="Image/ajit.jpg">
+      </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>My name is Ajit Itani. I am from Dhading,Nepal.Currently, I am living in Kathmandu. I am 17 years old. I have completed my SEE from Nepal Police School, Samakushi and I have been studying at National School of Sciences,Lainchour in Grade XI. </p>
+        <div class="tab-titles"                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+           <p class="tab-links" onclick="opentab('education')">Education </p>
+          </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li><span>Microsoft Office Pakage </span><br>Excel,Word,PPT</li>
+        </ul>
+      </div>
+       <div class="tab-contents" id="education">
+        <ul>
+          <li><span>2079-Present</span><br>National School of Sciences</li>
+          <li><span>2075-2078</span><br>Nepal Police School</li>
+          <li><span>2072-2074 </span><br>Kaushal English Broading School</li>
+          <li><span>2066-2073</span><br>National Inventive Higher Secondary School</li>
+        </ul>
+      </div>  
+      </div>
+    </div>
+  </div>
+</div>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-brands fa-microsoft"></i>
+        <h2>Microsoft Office Pakage</h2>
+        <p>Microsoft office package include word,ppt and excel. Microsoft word helps to creating the doucements. Excel helps to create simple to complex data/numerical spreadsheets.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-html5"></i>
+         <h2>HTML</h2>
+        <p>HTML is the fundamental building block of the Web HTML, developed by Tim Berner is the coding language used to design WebPages and create interlinked documents HTML can be defined as a set of tags (markup) that are used to define the web browser how to present the information in the webpages.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-sharp fa-solid fa-file-code"></i>
+         <h2>CSS</h2>
+        <p>Cascading Style Sheets (CSS) describe how documents are presented on screens. Cascading Style Sheets (CSS) provide easy and effective alternatives to specify various attributes for the HTML tags. Using CSS, you can specify a number of style properties for a given HTML element.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p <i class="fa-solid fa-envelope"></i></i>ajititani123@gmail.com</p>
+        <p <i class="fa-solid fa-phone"></i>9762873695</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/ajit.itani30?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com/ajititani30?igshid=NTA5ZTk1NTc="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+              <i
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+              
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <p><marquee direction="left">Copyright ©️ Ajit Itani. Made with the help of Easy Tutorial</marquee></p>
+</div>
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+          for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+</body>
+</html>
